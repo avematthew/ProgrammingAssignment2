@@ -1,6 +1,22 @@
 ## This is a script produced for an assignment for R programming, whose goal is to solve matrices while caching their solutions
+## specifically the script solves the inverse of a matrix
+
+## POTENTIAL PITFALLS ##
+## the script does not check that the matrix is invertible
+## the script does not check that it will not exceed any memory limits
+
+## FUNCTION SUMMARIES ##
 ## makeCacheMatrix creates an object which can be used by the cacheSolve function.
 ## cacheSolve checks to see if the passed matrix object already has a solution, and if not it calculates one. Otherwise it retrieves the cached solution.
+
+## VARIABLE NAMES ##
+## solvedmatrix: the cached solution to the matrix
+## x:  the input to the function at hand
+## input: the input to set a new value for the cacheMatrix object matrix
+## solution: the input to set a new value for the cacheMatrix object solution
+## data: container for the matrix data while being solved
+
+## BEGINNING OF SCRIPT ##
 
 ## makeCacheMatrix takes a matrix as its argument and produces a cached matrix object for use by cacheSolve
 ## it initializes the matrix solution in the cache as a null value
