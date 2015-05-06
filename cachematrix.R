@@ -9,7 +9,7 @@
 makeCacheMatrix <- function(x = matrix()) {
 	#initialize the matrix solution as a NULL value
 	solvedmatrix <- NULL
-	#set the matrix values
+	#set the matrix values, and flag that any cached solution is no longer valid
 	setmatrix <- function(input){
 		x <<- input
 		solvedmatrix <<- NULL
